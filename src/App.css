@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,11 +17,69 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Movie-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 20px;
+}
+
+.Movie-wrapper {
+  padding-bottom: 16px;
+  width: 280px;
+  min-height: 448px;
+  background-color: rgb(203, 203, 203);
+  color: #282c34;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px 1px rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  transition: all 0.1s ease-out;
+  cursor: pointer;
+}
+
+.Movie-wrapper:hover {
+  transform: scale(1.1);
+}
+
+.Movie-image {
+  width: 280px;
+  height: 280px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.Movie-title {
+  font-weight: bold;
+  font-size: 24px;
+  color: #282c34;
+}
+
+.Movie-date {
+  color: rgba(32, 32, 32, 0.645);
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.Movie-rate {
+  color: #ff5100;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.Movie-search {
+  height: 20px;
+  width: 450px;
+  font-size: 24px;
+  margin-bottom: 32px;
+  padding: 16px;
+  font-weight: bold;
+  border-radius: 20px;
 }
